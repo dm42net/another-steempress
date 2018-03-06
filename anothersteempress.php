@@ -14,7 +14,7 @@
  * @wordpress-plugin
  * Plugin Name:       Another Steempress
  * Description:       A cross-posting utility to post your WORDPRESS posts to the STEEM Blockchain
- * Version:           0.8.2
+ * Version:           0.8.3
  * Author:            DM42.Net
  * Author URI:        https://www.dm42.net/anothersteempress/
  * License:           GPL-2.0+

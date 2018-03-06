@@ -396,6 +396,9 @@ class AnotherSteempress_Admin {
       $post = get_post($postid);
 
       if ("post" != $post_type && "page" != $post_type)  return;
+      if ("post" == $post_type && !user_can(get_current_user_id(),'publish_posts')) return;
+      if ("page" == $post_type && !user_can(get_current_user_id(),'publish_pages')) return;
+
       $steemusers = $this->AnotherSteempress_get_steemusers();
 
       $postas = $_POST['anothersteempress_post_action'];
