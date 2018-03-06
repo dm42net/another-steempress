@@ -297,11 +297,11 @@ class AnotherSteempress_Admin {
 						$postcontent = preg_replace("/{{content}}/",$postcontent,$options['template']);
 
             if ($options['seo'] == "on") {
-              $link = strtolower($post->post_title);
-	      $link = preg_replace('/\s+/','-',$link);
-	      $link = preg_replace('/[^a-z0-9\-]/','',$link);
-	      $link = preg_replace('/[\-]+/','-',$link);
-              //$link = get_permalink($post->ID);
+              //$link = strtolower($post->post_title);
+	      //$link = preg_replace('/\s+/','-',$link);
+	      //$link = preg_replace('/[^a-z0-9\-]/','',$link);
+	      //$link = preg_replace('/[\-]+/','-',$link);
+              $link = get_permalink($post->ID);
             } else {
                 $link = "";
 						}
